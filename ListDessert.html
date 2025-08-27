@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/Favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./ListDessert.css">
+    <title>List Dessert</title>
+</head>
+<body>
+    <section class="Dessert">
+        <div class="Dessert__container">
+            <div class="container__dessert-options">
+                <h2 class="dessert-options__header">Desserts</h2>
+
+            </div>
+            <div class="container__desserts-result">
+                <h2 class="desserts-result__your-cart">Your Cart (<span class="span-count">0</span>)</h2>
+                <div class="desserts-result__cart-added">
+                    <img class="cart-added__img" src="./assets/images/illustration-empty-cart.svg" alt="">
+                    <p class="cart-added__paragraph">Your added items will appear here</p>
+                </div>
+                <div class="cart-added__order">
+                    <div class="cart-order__list">
+
+                    </div>
+                    <div class="cart-order__total">
+                        <p class="order-total__text">Order Total</p>
+                        <p class="order-total__sum"></p>
+                    </div>
+                    <div class="cart-order__info-delivery">
+                        <img class="order-delivery__img" src="./assets/images/icon-carbon-neutral.svg" alt="">
+                        <p class="order-delivery__paragraph">This is a <span class="order-delivery__button-span">carbon-neutral</span> delivery</p>
+                    </div>
+                    <button class="order-delivery__button order-modal__button">Confirm Order</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal modal--hidden">
+        <div class="modal__container">
+            <img class="modal-container__img" src="./assets/images/icon-order-confirmed.svg" alt="">
+            <h2 class="modal-container__confirmed">Order Confirmed</h2>
+            <p class="modal-container__paragraph">We hope you enjoy your food!</p>
+            <div class="modal-container__order-price">
+                <div class="modal-container__order-list"></div>
+                <div class="modal-container__full-price">
+                    <p class="modal-full-price__text">Order Total</p>
+                    <p class="modal-full-price__sum"></p>
+                </div>
+            </div>
+            <button class="modal-container__button order-modal__button">Start New Order</button>
+        </div>
+    </div>
+    <script src="./ListDessert.js"></script>
+</body>
+</html>
