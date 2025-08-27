@@ -33,6 +33,13 @@ body {
     gap: 1.5rem;
 }
 
+@media (max-width: 768px) {
+    .Dessert__container {
+        display: flex;
+        flex-direction: column;
+    }
+};
+
 .container__dessert-options {
     display: flex;
     flex-direction: column;
@@ -43,6 +50,22 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);    
     gap: 1.2rem;
+}
+
+@media (max-width:768px) {
+    .options-cart__position {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);    
+        gap: 1.2rem;
+    }
+}
+
+@media (max-width:480px) {
+    .options-cart__position {
+        display: flex;
+        flex-direction: column;   
+        gap: 2rem;
+    }
 }
 
 .cards-card__img {
